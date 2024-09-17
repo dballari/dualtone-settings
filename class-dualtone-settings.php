@@ -40,8 +40,8 @@ if ( ! class_exists( 'DualTone_Settings' ) )
         {
             // This page will be under "Apperance"
             add_theme_page(
-                __( 'DualTone Settings Page', 'dualtone' ),
-                __( 'DualTone settings', 'dualtone' ),
+                __( 'Theme Settings Page', 'dualtone' ),
+                __( 'Theme Settings', 'dualtone' ),
                 'edit_theme_options',
                 'dualtone',
                 array( $this, 'create_admin_page' )
@@ -55,7 +55,7 @@ if ( ! class_exists( 'DualTone_Settings' ) )
         {
             ?>
             <div class="wrap dualtone-settings">
-                <h1><?php _e( 'DualTone Theme Settings', 'dualtone' ); ?></h1>
+                <h1><?php _e( 'Theme Settings', 'dualtone' ); ?></h1>
                 <form method="post" action="options.php">
                 <input type="hidden" 
                     name="dualtone_theme_options[curated_patterns_slugs]" 
